@@ -37,7 +37,7 @@ export default {
 
 		if (upgradeHeader || upgradeHeader === 'websocket') {
 			return await fetch(
-				`https://overprivileged-peptized-cbnzbqndnj-dedicated.helius-rpc.com/?api-key=${env.HELIUS_API_KEY}`,
+				`https://overprivileged-peptized-cbnzbqndnj-dedicated.helius-rpc.com?api-key=${env.HELIUS_API_KEY}`,
 				request
 			);
 		}
