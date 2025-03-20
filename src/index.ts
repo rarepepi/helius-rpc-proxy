@@ -37,7 +37,7 @@ export default {
 
 		if (upgradeHeader || upgradeHeader === 'websocket') {
 			return await fetch(
-				`https://overprivileged-peptized-cbnzbqndnj-dedicated.helius-rpc.com?api-key=${env.HELIUS_API_KEY}`,
+				`https://overprivileged-peptized-cbnzbqndnj-dedicated.helius-rpc.com/?api-key=${env.HELIUS_API_KEY}`,
 				request
 			);
 		}
@@ -47,7 +47,7 @@ export default {
 		const proxyRequest = new Request(
 			`https://${
 				pathname === '/'
-					? 'https://overprivileged-peptized-cbnzbqndnj-dedicated.helius-rpc.com'
+					? 'overprivileged-peptized-cbnzbqndnj-dedicated.helius-rpc.com'
 					: 'api.helius.xyz'
 			}${pathname}?api-key=${env.HELIUS_API_KEY}${search ? `&${search.slice(1)}` : ''}`,
 			{
